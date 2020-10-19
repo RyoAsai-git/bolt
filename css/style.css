@@ -1,0 +1,140 @@
+:root {
+  --bg-dark-gray-color: #4e4e4e; 
+  --bg-gray-color: #f2f2f2;
+  --default-text-color: #333;
+  --theme-color: #74cfae;
+  --theme-sub-color: #c0c0c0;
+}
+
+.background {
+  background: var(--bg-gray-color);
+  width: 100%;
+}
+
+.inner {
+  margin: 0 auto;
+  width: 1100px;
+}
+
+.header {
+  position: relative;
+  position: fixed;
+  background-color: #fff;
+  width: 100%;
+
+}
+
+.icon-bolt {
+  left: 100px;
+  padding: 15px 0;
+  position: absolute;
+}
+
+.btn {
+  position: absolute;
+  font-size: 12px;
+  padding: 14px 12px;
+  text-decoration: none;
+  background-color: var(--theme-color);
+}
+
+.theme {
+  text-align: center;
+  background-color: var(--bg-gray-color);
+}
+
+.theme-main {
+  font-size: 90px;
+  font-weight: 700;
+  padding-top: 250px;
+  color: var(--theme-color);
+}
+
+.theme-sub {
+  color: var(--theme-sub-color);
+  font-size: 30px;
+  padding: 20px 0 250px;
+}
+
+.introduction {
+  background-color: var(--theme-color);
+  color: var(--bg-gray-color);
+  width: 100%;
+  height: 100%;
+}
+
+.iphone-img {
+  padding-top: 50px;
+}
+
+.title_text {
+  font-size: 24px;
+}
+
+.explanation_text {
+  font-size: 20px;
+}
+
+.works {
+  height: 100%;
+  color: var(--theme-sub-color);
+}
+
+.title_text-work {
+  padding: 60px 0 40px; 
+  text-align: center;
+  width: 100%;
+}
+
+
+.explanation_text-work {
+  padding: 90px 90px 70px 0;
+}
+
+.btn-email {
+  padding: 14px 20px;
+}
+
+.skills {
+  background-color: var(--bg-dark-gray-color);
+  color: var(--bg-gray-color);
+}
+
+.title_text-skill {
+  padding-top: 70px;
+}
+
+.text-skill {
+  font-size: 16px;
+}
+
+.icons-sns {
+  text-align: center;
+  color: var(--theme-color);
+}
+
+.icon {
+  margin: 200px 0 200px;
+  width: 180px;
+  font-size: 50px;
+  padding: 20px 0 20px;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+
+.icon:hover {
+  background-color: #fff;
+  transition: 0.3s;
+}
+
+.footer {
+  background-color: var(--theme-color);
+  /* position: relative; */
+}
+
+.text-footer {
+  color: var(--bg-gray-color);
+  padding: 20px 0 25px;
+  /* position: absolute; */
+  right: 400px;
+}
