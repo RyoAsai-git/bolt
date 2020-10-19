@@ -30,12 +30,13 @@
   padding: 15px 0;
 }
 
-.btn {
+.btn-contact {
   position: absolute;
   font-size: 12px;
   padding: 14px 12px;
   text-decoration: none;
   background-color: var(--theme-color);
+  color: #fff;
 }
 
 .theme {
@@ -169,16 +170,17 @@
   color: var(--theme-color);
 }
 
-.icon {
+.icon-sns {
   margin: 200px 0 200px;
   width: 180px;
   font-size: 50px;
   padding: 20px 0 20px;
   box-sizing: border-box;
   transition: 0.3s;
+  color: var(--theme-color);
 }
 
-.icon:hover {
+.icon-sns:hover {
   background-color: #fff;
   transition: 0.3s;
 }
