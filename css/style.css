@@ -6,9 +6,7 @@
   --theme-sub-color: #c0c0c0;
 }
 
-/* 最後にリファクタリング忘れずに */
-
-.background {
+.main {
   background: var(--bg-gray-color);
   width: 100%;
 }
@@ -19,128 +17,136 @@
 }
 
 .header {
-  position: fixed;
-  top: 0;
   background-color: #fff;
-  width: 100%;
   display: flex;
   justify-content: space-around;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+.icon {
+  font-size: 40px;
 }
 
 .icon-bolt {
-  font-size: 40px;
   padding-top: 15px;
   padding-bottom: 15px;
 }
 
 .btn {
-  text-decoration: none;
   background-color: var(--theme-color);
   color: #fff;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  color: var(--default-text-color);
+  transition: 0.3;
 }
 
 .btn-contact {
-  font-size: 12px;
   padding: 14px 12px;
   margin: 15px;
 }
 
 .theme {
-  text-align: center;
   background-color: var(--bg-gray-color);
+  text-align: center;
 }
 
 .theme-main {
+  color: var(--theme-color);
+  font-family: 'Raleway', sans-serif;
   font-size: 90px;
   font-weight: 700;
   padding-top: 250px;
-  color: var(--theme-color);
-  font-family: 'Raleway', sans-serif;
 }
 
 .theme-sub {
   color: var(--theme-sub-color);
+  font-family: 'Lato', sans-serif;
   font-size: 30px;
   padding: 20px 0 250px;
-  font-family: 'Lato', sans-serif;
 }
 
 .introduction {
   background-color: var(--theme-color);
   color: var(--bg-gray-color);
-  width: 100%;
   display: flex;
   justify-content: space-evenly;
+  width: 100%;
 }
 
-.image_area {
-}
-
-.iPhone-img {
+.iPhone_image {
   padding-top: 50px;
 }
 
 .text_area {
-  width: 50%;
   text-align: center;
+  width: 50%;
 }
 
 .title_text {
   font-size: 24px;
   font-family: 'Raleway', sans-serif;
   padding-top: 50px;
+  text-align: center;
 }
 
 .explanation_text {
-  font-size: 20px;
-  padding-top: 35px;
   font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  width: 95%;
+}
+
+.explanation_text-intro {
+  padding-top: 35px;
 }
 
 .works {
-  height: 100%;
   color: var(--theme-sub-color);
 }
 
 .title_text-work {
   padding: 60px 0 40px; 
-  text-align: center;
-  width: 100%;
 }
 
-.work-images {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+.work_images {
   font-size: 0;
 }
 
-.work-img {
-  box-sizing: border-box;
-  width : calc(33.3333333% - 240px / 3);
+.work_image {
   margin: 0 0 80px 100px;
-  font-size: 0;
+  opacity: 0.7;
+  width : calc(33.3333333% - 240px / 3);
 }
 
-.work-img:first-child {
+.work_image:hover {
+  opacity: 1;
+  transition: 0.3;
+}
+
+.work_image:first-child {
   margin-left: 0;
+  
 }
 
-.work-img:nth-child(3n) {
+.work_image:nth-child(3n) {
   margin-right: 0;
 }
 
-.work-img:nth-child(4n) {
+.work_image:nth-child(4n) {
+  margin-bottom: 0;
   margin-left: 0;
+}
+
+.work_image:nth-child(5n) {
   margin-bottom: 0;
 }
 
-.work-img:nth-child(5n) {
-  margin-bottom: 0;
-}
-
-.work-img:nth-child(6n) {
+.work_image:nth-child(6n) {
   margin-bottom: 0;
 }
 
@@ -150,56 +156,41 @@
 }
 
 .explanation_text-work {
-  padding: 90px 90px 70px 0;
   color: var(--bg-dark-gray-color);
-  width: 50%;
+  padding: 90px 90px 70px 0;
+  text-align: center;
+  width: 52%;
+  word-wrap: break-word;
 }
 
 .btn-email {
-  padding: 14px 20px;
-  font-size: 12px;
   height: 50%;
-  white-space: nowrap;
+  padding: 14px 20px;
   margin-top: 90px;
+  white-space: nowrap;
 }
 
 .skills {
   background-color: var(--bg-dark-gray-color);
   color: var(--bg-gray-color);
-}
-
-/* .skill-img {
-  padding-left: 180px;
+  width: 100%;
 }
 
 .title_text-skill {
   padding-top: 70px;
 }
 
-.text-skills {
-  font-size: 16px;
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 100px;
-  font-family: 'Lato', sans-serif;
-} */
-
-.title_text-skill {
-  text-align: center;
-  padding-top: 70px;
-}
-
-.skill-area {
+.skill_images {
   display: flex;
   justify-content: center;
   padding-top: 50px;
 }
 
-.skill-img {
+.skill_image {
   padding-right: 180px;
 }
 
-.skill-img:last-child {
+.skill_image:last-child {
   padding-right: 0;
 }
 
@@ -209,19 +200,17 @@
   text-align: center;
 }
 
-.icons-sns {
+.icons_sns {
   text-align: center;
-  color: var(--theme-color);
 }
 
 .icon-sns {
-  margin: 200px 0 200px;
-  width: 180px;
-  font-size: 50px;
-  padding: 20px 0 20px;
   box-sizing: border-box;
-  transition: 0.3s;
   color: var(--theme-color);
+  margin: 200px 0 200px;
+  padding: 20px 0 20px;
+  width: 180px;
+  transition: 0.3s;
 }
 
 .icon-sns:hover {
@@ -231,11 +220,9 @@
 
 .footer {
   background-color: var(--theme-color);
+  color: var(--bg-gray-color);
   display: flex;
   justify-content: space-around;
-}
-
-.text-footer {
-  color: var(--bg-gray-color);
   padding: 20px 0 25px;
+  width: 100%;
 }
