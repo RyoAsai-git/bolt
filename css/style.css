@@ -132,13 +132,8 @@
   margin-left: 0;
 }
 
-.work_image:nth-child(3n) {
-  margin-right: 0;
-}
-
 .work_image:nth-child(4n) {
-  margin-bottom: 0;
-  margin-left: 0;
+  margin: 0;
 }
 
 .work_image:nth-child(5n) {
@@ -193,8 +188,7 @@
 }
 
 .skill {
-  padding-bottom: 100px;
-  padding-top: 20px;
+  padding: 20px 0 100px;
   text-align: center;
 }
 
