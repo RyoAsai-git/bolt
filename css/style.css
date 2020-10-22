@@ -26,6 +26,10 @@
   z-index: 1;
 }
 
+/* .header-inner {
+  padding 15 15
+} */
+
 .icon {
   font-size: 40px;
 }
@@ -63,6 +67,14 @@
   font-weight: 700;
   padding-top: 250px;
 }
+
+/* 
+.theme-inner {
+  padding: 250px　上下
+
+}
+
+  */
 
 .theme-sub {
   color: var(--theme-sub-color);
@@ -219,3 +231,71 @@
   padding: 20px 0 25px;
   width: 100%;
 }
+
+/* 
+  header 
+  1100px 端
+
+  work image
+  1100px 端
+
+  footer 
+  1100px 端
+
+  our latest work
+  dark-gray
+
+  hover
+  work-image 6枚
+  contact
+  email
+
+  sns問題なし
+*/
+
+/* 
+  header
+　main
+  div (theme)
+  section (what we can do)
+  article (our latest work)
+  section (our skills)
+  nav (sns)
+　footer
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <header class="header">    ← このclassに背景色の指定、幅いっぱいのやつ
+    <div class="inner header-inner"></div>    ← このclassにコンテンツ幅の指定と中央寄せ
+  </header>
+  <main>
+    <div class="title">    ← このclassに背景色の指定、幅いっぱいのやつ
+      <div class="inner title-inner"></div>    ← このclassにコンテンツ幅の指定と中央寄せ
+    </div>
+  </main>
+  <footer class="footer">    ← このclassに背景色の指定、幅いっぱいのやつ
+    <div class="inner"></div>    ← このclassにコンテンツ幅の指定と中央寄せ
+  </footer>
+</body>
+</html>
+
+*/
+
+/* 
+  ページにはコンテンツ幅ある
+  innerにコンテンツはばを持たせてあげることでinnerを変えるだけで問題なく変更できる
+
+  headerからinnerから囲ってしまうと色の指定できる
+
+  修正点　みため
+  html 構造修正
+
+  子要素で親の領域に影響を与えることは好ましくない
+  親が子の領域を決める。
+  
+*/
