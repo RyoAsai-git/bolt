@@ -19,23 +19,19 @@
 
 .header {
   background-color: #fff;
-  display: flex;
-  justify-content: space-around;
   position: fixed;
   width: 100%;
   z-index: 1;
 }
 
-/* .header-inner {
-  padding 15 15
-} */
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0 15px;
+}
 
 .icon {
   font-size: 40px;
-}
-
-.icon-bolt {
-  padding: 15px 0 15px;
 }
 
 .btn {
@@ -52,7 +48,6 @@
 
 .btn-contact {
   padding: 14px 12px;
-  margin: 15px;
 }
 
 .theme {
@@ -297,5 +292,5 @@
 
   子要素で親の領域に影響を与えることは好ましくない
   親が子の領域を決める。
-  
+
 */
