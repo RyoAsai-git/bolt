@@ -65,13 +65,13 @@
   font-family: 'Raleway', sans-serif;
   font-size: 90px;
   font-weight: 700;
-  padding-bottom: 20px;
 }
 
 .theme-sub {
   color: var(--theme-sub-color);
   font-family: 'Lato', sans-serif;
   font-size: 30px;
+  margin-top: 20px;
 }
 
 .introduction {
@@ -103,7 +103,7 @@
 }
 
 .explanation_text-intro {
-  padding-top: 35px;
+  margin-top: 35px;
 }
 
 .works {
@@ -114,42 +114,33 @@
   padding: 60px 0 70px;
 }
 
-.title_text-work {
-  padding-bottom: 40px; 
-}
-
 .work_images {
   font-size: 0;
+  margin-top: 40px;
 }
 
 .work_image {
   display: inline-block;
-  margin: 0 0 80px 100px;
+  margin-left: 100px;
+  margin-top: 80px;
   opacity: 0.7;
   transition: 0.3s;
   width : calc(33.3333333% - 200px / 3);
 } 
+/* 上 */
 
 .work_image:hover {
   opacity: 1;
   transition: 0.3s;
 }
 
- .work_image:first-child {
-  margin-left: 0;
+.work_image:nth-child(-n + 3) {
+  margin-top: 0;
 }
 
-.work_image:nth-child(4n) {
-  margin: 0;
-} 
-
-.work_image:nth-child(5n) {
-  margin-bottom: 0;
-} 
-
-.work_image:nth-child(6n) {
-  margin-bottom: 0;
-} 
+.work_image:nth-child(3n + 1) {
+  margin-left: 0;
+}
 
 .text_area-works {
   display: flex;
@@ -180,25 +171,22 @@
   padding: 70px 0 70px;
 }
 
-.title_text-skill {
-  padding-bottom: 70px;
-}
-
 .skill_images {
   display: flex;
   justify-content: center;
+  margin-top: 70px;
 }
 
 .skill_image {
-  padding-right: 180px;
+  margin-left: 180px;
 }
 
-.skill_image:last-child {
-  padding-right: 0;
+.skill_image:first-child {
+  margin-left: 0;
 }
 
 .skill {
-  padding-top: 20px;
+  margin-top: 20px;
   text-align: center;
 }
 
@@ -297,5 +285,49 @@
 
   子要素で親の領域に影響を与えることは好ましくない
   親が子の領域を決める。
+
+*/
+
+
+/* 2回目
+
+  padding　そのもの自体の余白領域を広げる
+  margin 要素同士の間をとる margin 基本上と左 top left
+    要素は上左へ追加される
+    追加削除を自然に行うことができる
+
+   padding marginの修正
+   nth:child修正
+*/
+
+
+
+
+
+/* 3n+1
+   -n+3
+*/
+
+/* :nth-child(-n+3) {
+  -方向にn番目 
+  +で開始位置
+}
+(2n) 2 * 1, 2 * 2, 
+(2n + 1) 2 * 1 * 1
+(3n + 1) 1, 4, 7, 10   */
+
+
+
+/* 
+  nth-child() 1nは全て
+  2n 2 4 6
+  3n 3 6 9
+
+  123は上のマージンがいらない
+  1,4の左マージンを削除
+  7のマージン
+
+
+  nth:child最初から三番目
 
 */
