@@ -202,16 +202,16 @@
   text-align: center;
 }
 
-.icons_sns {
+.inner_sns {
+  font-size: 0;
+  padding: 200px 0 200px;
   text-align: center;
 }
 
 .icon-sns {
-  box-sizing: border-box;
   color: var(--theme-color);
-  margin: 200px 0 200px;
   padding: 20px 0 20px;
-  width: 180px;
+  width: 185px;
   transition: 0.3s;
 }
 
