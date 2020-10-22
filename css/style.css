@@ -9,6 +9,7 @@
 .main {
   background: var(--bg-gray-color);
   width: 100%;
+  padding-top: 70px;
 }
 
 .inner {
@@ -30,8 +31,7 @@
 }
 
 .icon-bolt {
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding: 15px 0 15px;
 }
 
 .btn {
@@ -176,13 +176,12 @@
 }
 
 .title_text-skill {
-  padding-top: 70px;
+  padding: 70px 0 70px;
 }
 
 .skill_images {
   display: flex;
   justify-content: center;
-  padding-top: 50px;
 }
 
 .skill_image {
