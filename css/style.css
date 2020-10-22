@@ -127,7 +127,7 @@
   margin: 0 0 80px 100px;
   opacity: 0.7;
   transition: 0.3s;
-  width : calc(33.3333333% - 240px / 3);
+  width : calc(33.3333333% - 200px / 3);
 } 
 
 .work_image:hover {
@@ -232,19 +232,20 @@
 }
 
 /* 
-  header 
+  ✔︎header 
   1100px 端
 
-  work image
+  ✔︎work image
   1100px 端
 
-  footer 
+
+  ✔︎footer 
   1100px 端
 
-  our latest work
+  ✔︎our latest work
   dark-gray
 
-  hover
+  ✔︎hover
   work-image 6枚
   contact
   email
