@@ -43,7 +43,7 @@
 
 .btn:hover {
   color: var(--default-text-color);
-  transition: 0.3;
+  transition: 0.3s;
 }
 
 .btn-contact {
@@ -118,31 +118,32 @@
 }
 
 .work_image {
+  display: inline-block;
   margin: 0 0 80px 100px;
   opacity: 0.7;
   width : calc(33.3333333% - 240px / 3);
-}
+} 
 
 .work_image:hover {
   opacity: 1;
-  transition: 0.3;
+  transition: 0.3s;
 }
 
-.work_image:first-child {
+ .work_image:first-child {
   margin-left: 0;
 }
 
 .work_image:nth-child(4n) {
   margin: 0;
-}
+} 
 
 .work_image:nth-child(5n) {
   margin-bottom: 0;
-}
+} 
 
 .work_image:nth-child(6n) {
   margin-bottom: 0;
-}
+} 
 
 .text_area-works {
   display: flex;
