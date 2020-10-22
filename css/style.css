@@ -76,13 +76,12 @@
 .introduction {
   background-color: var(--theme-color);
   color: var(--bg-gray-color);
-  display: flex;
-  justify-content: space-evenly;
-  width: 100%;
 }
 
-.iPhone_image {
+.introduction-inner {
   padding-top: 50px;
+  display: flex;
+  justify-content: space-around;
 }
 
 .text_area {
