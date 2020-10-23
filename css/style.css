@@ -199,6 +199,7 @@
   padding: 20px 0 20px;
   width: 185px;
   transition: 0.3s;
+  display: inline-block;
 }
 
 .icon-sns:hover {
@@ -213,7 +214,7 @@
 
 .footer-inner {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   padding: 20px 0 25px;
 }
 
