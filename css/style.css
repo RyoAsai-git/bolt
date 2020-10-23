@@ -143,10 +143,11 @@
 .text_area-works {
   display: flex;
   justify-content: center;
+  margin: 90px 90px 0 0;
 }
 
 .explanation_text-work {
-  margin: 90px 90px 0 0;
+  margin-right: 90px;
   text-align: center;
   width: 52%;
   word-wrap: break-word;
@@ -155,7 +156,6 @@
 .btn-email {
   height: 50%;
   padding: 14px 20px;
-  margin-top: 90px;
   transition: 0.3s;
 }
 
