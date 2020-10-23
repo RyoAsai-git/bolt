@@ -6,8 +6,16 @@
   --theme-sub-color: #c0c0c0;
 }
 
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.font_Raleway {
+  font-family: 'Raleway', sans-serif;
+}
+
 .main {
-  background: var(--bg-gray-color);
+  background-color: #f2f2f2;
   width: 100%;
   padding-top: 70px;
 }
@@ -35,14 +43,14 @@
 }
 
 .btn {
-  background-color: var(--theme-color);
+  background-color: #74cfae;
   color: #fff;
   font-size: 12px;
   text-decoration: none;
 }
 
 .btn:hover {
-  color: var(--default-text-color);
+  color: #333;
   transition: 0.3s;
 }
 
@@ -52,7 +60,7 @@
 }
 
 .theme {
-  background-color: var(--bg-gray-color);
+  background-color: #f2f2f2;
   text-align: center;
 }
 
@@ -61,22 +69,20 @@
 }
 
 .theme-main {
-  color: var(--theme-color);
-  font-family: 'Raleway', sans-serif;
+  color: #74cfae;;
   font-size: 90px;
   font-weight: 700;
 }
 
 .theme-sub {
-  color: var(--theme-sub-color);
-  font-family: 'Lato', sans-serif;
+  color: #c0c0c0;
   font-size: 30px;
   margin-top: 20px;
 }
 
 .introduction {
-  background-color: var(--theme-color);
-  color: var(--bg-gray-color);
+  background-color: #74cfae;;
+  color: #f2f2f2;
 }
 
 .introduction-inner {
@@ -92,12 +98,10 @@
 
 .title_text {
   font-size: 24px;
-  font-family: 'Raleway', sans-serif;
   text-align: center;
 }
 
 .explanation_text {
-  font-family: 'Lato', sans-serif;
   font-size: 20px;
   width: 95%;
 }
@@ -107,7 +111,7 @@
 }
 
 .works {
-  color: var(--bg-dark-gray-color);
+  color: #4e4e4e;
 }
 
 .works-inner {
@@ -149,7 +153,7 @@
 .explanation_text-work {
   margin-right: 90px;
   text-align: center;
-  width: 52%;
+  width: 58%;
   word-wrap: break-word;
 }
 
@@ -160,8 +164,8 @@
 }
 
 .skills {
-  background-color: var(--bg-dark-gray-color);
-  color: var(--bg-gray-color);
+  background-color: #4e4e4e;
+  color: #f2f2f2;
   width: 100%;
 }
 
@@ -195,7 +199,7 @@
 }
 
 .icon-sns {
-  color: var(--theme-color);
+  color: #74cfae;
   padding: 20px 0 20px;
   width: 185px;
   transition: 0.3s;
@@ -208,8 +212,8 @@
 }
 
 .footer {
-  background-color: var(--theme-color);
-  color: var(--bg-gray-color);
+  background-color: #74cfae;;
+  color: #f2f2f2;
 }
 
 .footer-inner {
