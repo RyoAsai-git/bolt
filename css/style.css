@@ -143,7 +143,6 @@ body {
 }
 
 .explanation_text-work {
-  margin-right: 90px;
   text-align: center;
   width: 58%;
   word-wrap: break-word;
@@ -151,6 +150,7 @@ body {
 
 .btn-email {
   height: 50%;
+  margin-left: 90px;
   padding: 14px 20px;
   transition: 0.3s;
 }
@@ -184,10 +184,13 @@ body {
   text-align: center;
 }
 
-.inner_sns {
+.sns {
   font-size: 0;
-  padding: 200px 0 200px;
   text-align: center;
+}
+
+.inner_sns {
+  padding: 200px 0 200px;
 }
 
 .icon-sns {
