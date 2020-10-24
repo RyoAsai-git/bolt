@@ -29,6 +29,12 @@ body {
   width: 1100px;
 }
 
+@media (max-width: 767px) {
+  .inner {
+    width: 97%;
+  }
+}
+
 .header {
   background-color: #fff;
   width: 100%;
@@ -53,6 +59,10 @@ body {
   font-size: 40px;
 }
 
+.icon-bolt {
+  color: #4e4e4e;
+}
+
 .btn {
   background-color: #74cfae;
   color: #fff;
@@ -68,50 +78,6 @@ body {
 .btn-contact {
   padding: 14px 12px;
   transition: 0.3s;
-}
-
-@media (min-width: 768px) {
-  .hamburger_menu {
-    display: none;
-  }
-}
-
-@media (max-width: 767px) {
-  .btn-contact {
-    display: none;
-  }
-  .hamburger_menu {
-    content: "";
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 10px;
-    position: relative;
-    width: 25px;
-  }
-
-  .line_top {
-    background-color: #ddd;
-    height: 3px;
-    position: absolute;
-    top: 10px;
-    width: 25px;
-  }
-
-  .line_middle {
-    background-color: #ddd;
-    height: 3px;
-    position: absolute;
-    top: 17px;
-    width: 25px;
-  }
-
-  .line_bottom {
-    background-color: #ddd;
-    height: 3px;
-    position: absolute;
-    top: 24px;
-    width: 25px;
-  }
 }
 
 .theme {
@@ -135,20 +101,82 @@ body {
   margin-top: 20px;
 }
 
+@media (min-width: 768px) {
+  .hamburger_menu {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .main {
+    padding-top: 0;
+  }
+
+  .icon-bolt {
+    font-size: 60px;
+  }
+
+  .btn-contact {
+    display: none;
+  }
+
+  .hamburger_menu {
+    content: "";
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    height: 20px;
+    padding: 10px;
+    position: relative;
+    width: 25px;
+  }
+
+  .line_top {
+    background-color: #ddd;
+    height: 3px;
+    position: absolute;
+    top: 11px;
+    width: 25px;
+  }
+
+  .line_middle {
+    background-color: #ddd;
+    height: 3px;
+    position: absolute;
+    top: 18px;
+    width: 25px;
+  }
+
+  .line_bottom {
+    background-color: #ddd;
+    height: 3px;
+    position: absolute;
+    top: 25px;
+    width: 25px;
+  }
+
+  .theme-inner {
+    padding: 160px 0 130px;
+  }
+
+  .theme-main {
+    font-size: 80px;
+  }
+}
+
 .introduction {
   background-color: #74cfae;;
   color: #f2f2f2;
 }
 
-.introduction-inner {
+/* .introduction-inner {
   padding-top: 50px;
   display: flex;
   justify-content: space-around;
-}
+} */
 
 .text_area {
   text-align: center;
-  width: 50%;
+  /* width: 50%; */
 }
 
 .title_text {
@@ -163,6 +191,40 @@ body {
 
 .explanation_text-intro {
   margin-top: 35px;
+}
+
+@media (max-width: 767px) {
+
+  .introduction-inner {
+    padding: 50px 0 25px; 
+  }
+
+  .iPhone_image {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .text_area {
+    margin-top: 15px;
+  }
+
+  .explanation_text-intro {
+    width: 299px;
+    margin-left: 30px;
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .introduction-inner {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .text_area {
+    width: 50%;
+  }
 }
 
 .works {
