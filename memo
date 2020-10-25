@@ -1,0 +1,113 @@
+/* 
+  ✔︎header 
+  1100px 端
+
+  ✔︎work image
+  1100px 端
+
+
+  ✔︎footer 
+  1100px 端
+
+  ✔︎our latest work
+  dark-gray
+
+  ✔︎hover
+  work-image 6枚
+  contact
+  email
+
+  sns問題なし
+*/
+
+/* 
+  header
+　main
+  div (theme)
+  section (what we can do)
+  article (our latest work)
+  section (our skills)
+  nav (sns)
+　footer
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <header class="header">    ← このclassに背景色の指定、幅いっぱいのやつ
+    <div class="inner header-inner"></div>    ← このclassにコンテンツ幅の指定と中央寄せ
+  </header>
+  <main>
+    <div class="title">    ← このclassに背景色の指定、幅いっぱいのやつ
+      <div class="inner title-inner"></div>    ← このclassにコンテンツ幅の指定と中央寄せ
+    </div>
+  </main>
+  <footer class="footer">    ← このclassに背景色の指定、幅いっぱいのやつ
+    <div class="inner"></div>    ← このclassにコンテンツ幅の指定と中央寄せ
+  </footer>
+</body>
+</html>
+
+*/
+
+/* 
+  ページにはコンテンツ幅ある
+  innerにコンテンツはばを持たせてあげることでinnerを変えるだけで問題なく変更できる
+
+  headerからinnerから囲ってしまうと色の指定できる
+
+  修正点　みため
+  html 構造修正
+
+  子要素で親の領域に影響を与えることは好ましくない
+  親が子の領域を決める。
+
+*/
+
+
+/* 2回目
+
+  padding　そのもの自体の余白領域を広げる
+  margin 要素同士の間をとる margin 基本上と左 top left
+    要素は上左へ追加される
+    追加削除を自然に行うことができる
+
+   padding marginの修正
+   nth:child修正
+*/
+
+
+
+
+
+/* 3n+1
+   -n+3
+*/
+
+/* :nth-child(-n+3) {
+  -方向にn番目 
+  +で開始位置
+}
+(2n) 2 * 1, 2 * 2, 
+(2n + 1) 2 * 1 * 1
+(3n + 1) 1, 4, 7, 10   */
+
+
+
+/* 
+  nth-child() 1nは全て
+  2n 2 4 6
+  3n 3 6 9
+
+  123は上のマージンがいらない
+  1,4の左マージンを削除
+  7のマージン
+
+
+  nth:child最初から三番目
+
+*/
+
