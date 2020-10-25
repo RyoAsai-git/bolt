@@ -225,7 +225,7 @@ body {
   }
 
   .explanation_text-intro {
-    margin-left: 40px;
+    display: inline-block;
   }
 }
 
@@ -298,7 +298,6 @@ body {
 
 .btn-email {
   height: 50%;
-  /* margin-left: 90px; */
   padding: 14px 20px;
   transition: 0.3s;
 }
@@ -332,13 +331,12 @@ body {
     text-align: center;
   }
 
-  .work_image:first-child {
-    /* margin-top: 0; */
-    margin: initial;
-  }
-
   .work_image:nth-child(3n + 1) {
     margin-top: 80px;
+  }
+
+  .work_image:first-child {
+    margin-top: 0;
   }
   
   .text_area-works {
