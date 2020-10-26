@@ -138,6 +138,10 @@ body {
   margin-left: 0;
 }
 
+a {
+  display: inline-block;
+}
+
 .explanation_text-work {
   text-align: center;
 }
@@ -173,14 +177,12 @@ body {
 }
 
 .icon-sns {
-  color: #74cfae;
-  padding: 20px 0 20px;
-  width: 185px;
   transition: 0.3s;
   display: inline-block;
 }
 
-.icon-color {
+.link_sns {
+  padding: 20px 0 20px;
   color: #74cfae;
 }
 
@@ -204,6 +206,10 @@ body {
 @media (min-width: 768px){
   .hamburger_menu {
     display: none;
+  }
+
+  .link_sns {
+    width: 185px;
   }
 }
 /* ------------------------------ */
@@ -434,7 +440,10 @@ body {
   }
 
   .icon-sns {
-    padding: 35px 0 35px;
+    width: 100%;
+  }
+
+  .link_sns {
     width: 100%;
   }
 }

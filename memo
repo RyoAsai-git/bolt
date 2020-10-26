@@ -108,7 +108,6 @@
 
 
   nth:child最初から三番目
-
 */
 
 
@@ -116,7 +115,7 @@
 ✔︎text_area 
 tab margin 
 
-work
+✔︎work
 figureをul
   li
     a
@@ -124,7 +123,7 @@ figureをul
   li
 
 figure　画像とテキスト包むと良い
-<div class="skill_images">
+✔︎<div class="skill_images">
   ul
     li
       figure
@@ -132,7 +131,7 @@ figure　画像とテキスト包むと良い
     li
     li
 
-  sp
+  ✔︎sp
     li
 
     修正後pcも確認
