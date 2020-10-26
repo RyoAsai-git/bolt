@@ -180,6 +180,10 @@ body {
   display: inline-block;
 }
 
+.icon-color {
+  color: #74cfae;
+}
+
 .icon-sns:hover {
   background-color: #fff;
   transition: 0.3s;
