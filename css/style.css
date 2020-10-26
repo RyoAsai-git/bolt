@@ -1,3 +1,5 @@
+
+
 body {
   font-family: 'Lato', sans-serif;
 
@@ -17,12 +19,6 @@ body {
 .inner {
   margin: 0 auto;
   width: 1100px;
-}
-
-@media (max-width: 1199px) {
-  .inner {
-    width: 97%;
-  }
 }
 
 .header {
@@ -203,20 +199,7 @@ body {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1199px) {
-  .introduction-inner {
-    padding: 50px 0 35px;
-    text-align: center;
-  }
 
-  .title_text-intro {
-    margin-top: 20px;
-  }
-
-  .explanation_text-intro {
-    display: inline-block;
-  }
-}
 
 @media (min-width: 1200px) {
   .introduction-inner {
@@ -323,38 +306,6 @@ body {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1199px) {
-  .work_image {
-    display: block;
-    text-align: center;
-  }
-
-  .work_image:nth-child(3n + 1) {
-    margin-top: 80px;
-  }
-
-  .work_image:first-child {
-    margin-top: 0;
-  }
-  
-  .text_area-works {
-    margin-top: 80px;
-    text-align: center;
-  }
-
-  .explanation_text-work {
-    width: 100%;
-  }
-
-  .btn-email {
-    display: inline-block;
-    height: 50%;
-    margin-top: 40px;
-    padding: 14px 20px;
-    transition: 0.3s;
-  }
-}
-
 
 @media (min-width: 1200px) {
   .work_images {
@@ -430,21 +381,6 @@ body {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1199px) {
-  .skill_image_area {
-    text-align: center;
-    margin-top: 80px;
-  }
-
-  .skill_image_area:first-child {
-    margin-top: 40px;
-  }
-
-  .skill_image {
-    display: inline-block;
-  }
-}
-
 @media (min-width: 1200px) {
   .skill_images {
     display: flex;
@@ -508,4 +444,70 @@ body {
   display: flex;
   justify-content: flex-end;
   padding: 20px 0 25px;
+}
+
+
+
+@media (max-width: 1199px) {
+  .inner {
+    width: 97%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .introduction-inner {
+    padding: 50px 0 35px;
+    text-align: center;
+  }
+
+  .title_text-intro {
+    margin-top: 20px;
+  }
+
+  .explanation_text-intro {
+    display: inline-block;
+  }
+
+  .work_image {
+    display: block;
+    text-align: center;
+  }
+
+  .work_image:nth-child(3n + 1) {
+    margin-top: 80px;
+  }
+
+  .work_image:first-child {
+    margin-top: 0;
+  }
+  
+  .text_area-works {
+    margin-top: 80px;
+    text-align: center;
+  }
+
+  .explanation_text-work {
+    width: 100%;
+  }
+
+  .btn-email {
+    display: inline-block;
+    height: 50%;
+    margin-top: 40px;
+    padding: 14px 20px;
+    transition: 0.3s;
+  }
+  
+  .skill_image_area {
+    text-align: center;
+    margin-top: 80px;
+  }
+
+  .skill_image_area:first-child {
+    margin-top: 40px;
+  }
+
+  .skill_image {
+    display: inline-block;
+  }
 }
