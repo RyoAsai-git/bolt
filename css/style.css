@@ -1,6 +1,5 @@
 body {
-  font-family: 'Lato', sans-serif;
-
+    font-family: 'Lato', sans-serif;
 }
 
 .font_Raleway {
@@ -11,7 +10,6 @@ body {
   background-color: #f2f2f2;
   width: 100%;
   padding-top: 70px;
-  
 }
 
 .inner {
@@ -81,15 +79,10 @@ body {
   color: #f2f2f2;
 }
 
-/* .introduction-inner {
-  padding-top: 50px;
-  display: flex;
-  justify-content: space-around;
-} */
 
 .text_area {
   text-align: center;
-  /* width: 50%; */
+  width: 50%;
 }
 
 .title_text {
@@ -106,18 +99,6 @@ body {
   margin-top: 35px;
 }
 
-@media (min-width: 1200px) {
-  .introduction-inner {
-    padding-top: 50px;
-    display: flex;
-    justify-content: space-around;
-  }
-
-  .text_area {
-    width: 50%;
-  }
-}
-
 .works {
   color: #4e4e4e;
 }
@@ -130,14 +111,6 @@ body {
   font-size: 0;
   margin-top: 40px;
 }
-/* 
-.work_image {
-  display: inline-block;
-  margin: 80px 0 0 100px;
-  opacity: 0.7;
-  transition: 0.3s;
-  width : calc(33.3333333% - 200px / 3);
-}  */
 
 .work_image {
   opacity: 0.7;
@@ -157,18 +130,6 @@ body {
   margin-left: 0;
 }
 
-/* .text_area-works {
-  display: flex;
-  justify-content: center;
-  margin: 90px 90px 0 0;
-} */
-
-/* .explanation_text-work {
-  text-align: center;
-  width: 58%;
-  word-wrap: break-word;
-} */
-
 .explanation_text-work {
   text-align: center;
 }
@@ -177,36 +138,6 @@ body {
   height: 50%;
   padding: 14px 20px;
   transition: 0.3s;
-}
-
-@media (min-width: 1200px) {
-  .work_images {
-    margin-top: 40px;
-  }
-
-  .work_image {
-    display: inline-block;
-    margin: 80px 0 0 100px;
-    opacity: 0.7;
-    transition: 0.3s;
-    width : calc(33.3333333% - 200px / 3);
-  } 
-
-  .text_area-works {
-    display: flex;
-    justify-content: center;
-    margin: 90px 90px 0 0;
-  }
-
-  .explanation_text-work {
-    /* text-align: center; */
-    width: 58%;
-    word-wrap: break-word;
-  }
-
-  .btn-email {
-    margin-left: 90px;
-  }
 }
 
 .skills {
@@ -219,39 +150,9 @@ body {
   padding: 70px 0 70px;
 }
 
-/* .skill_images {
-  display: flex;
-  justify-content: center;
-  margin-top: 70px;
-} */
-
-/* .skill_image {
-  margin-left: 180px;
-} */
-
-/* .skill_image:first-child {
-  margin-left: 0;
-} */
-
 .skill {
   margin-top: 20px;
   text-align: center;
-}
-
-@media (min-width: 1200px) {
-  .skill_images {
-    display: flex;
-    justify-content: center;
-    margin-top: 70px;
-  }
-
-  .skill_image_area {
-    margin-left: 180px;
-  }
-    
-  .skill_image_area:first-child {
-    margin-left: 0;
-  }
 }
 
 .sns {
@@ -287,11 +188,30 @@ body {
   padding: 20px 0 25px;
 }
 
-/* ------TAB SP　共通------------------------ */
 
+/* --------TAB PC共通------------- */
+@media (min-width: 768px){
+  .header {
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  .hamburger_menu {
+    display: none;
+  }
+}
+/* ------------------------------ */
+
+/* ------TAB SP　共通------------------------ */
 @media (max-width: 1199px) {
   .inner {
     width: 97%;
+  }
+
+  .text_area {
+    width: 100%;
   }
 
   .explanation_text-intro {
@@ -311,6 +231,10 @@ body {
     margin-top: 0;
   }
 
+  .text_area-works {
+    text-align: center;
+  }
+
   .btn-email {
     display: inline-block;
   }
@@ -324,30 +248,56 @@ body {
     margin-top: 40px;
   }
 }
+/* -------------------------------- */
 
-/* --------TAB PC共通------------- */
-
-@media (min-width: 768px){
-  .header {
-    background-color: #fff;
-    position: fixed;
-    width: 100%;
-    z-index: 1;
+/* ---------PC--------------- */
+@media (min-width: 1200px) {
+  .introduction-inner {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-around;
   }
   
-  .hamburger_menu {
-    display: none;
+  .work_image {
+    display: inline-block;
+    margin: 80px 0 0 100px;
+    opacity: 0.7;
+    transition: 0.3s;
+    width : calc(33.3333333% - 200px / 3);
+  } 
+
+  .text_area-works {
+    display: flex;
+    justify-content: center;
+    margin: 90px 90px 0 0;
+  }
+
+  .explanation_text-work {
+    width: 58%;
+  }
+
+  .btn-email {
+    margin-left: 90px;
+  }
+
+  .skill_images {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+  }
+
+  .skill_image_area {
+    margin-left: 180px;
+  }
+    
+  .skill_image_area:first-child {
+    margin-left: 0;
   }
 }
-
-/* ------------------------------ */
+/* ---------------------------------- */
 
 /* ----------------TAB------------------- */
 @media (min-width: 768px) and (max-width: 1199px) {
-  .text_area {
-    width: 100%;
-  }
-  
   .introduction-inner {
     padding: 50px 0 35px;
     text-align: center;
@@ -359,7 +309,6 @@ body {
   
   .text_area-works {
     margin-top: 80px;
-    text-align: center;
   }
 
   .explanation_text-work {
@@ -377,6 +326,7 @@ body {
     display: inline-block;
   }
 }
+/* ----------------------------------------------- */
 
 /* ------------------SP----------------------------- */
 @media (max-width: 767px) {
@@ -449,7 +399,6 @@ body {
   
   .text_area-works {
     margin-top: 90px;
-    text-align: center;
   }
 
   .explanation_text-work {
@@ -481,5 +430,4 @@ body {
     width: 100%;
   }
 }
-
 /* ------------------------- */
