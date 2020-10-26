@@ -1,9 +1,18 @@
+@charset "utf-8";
+
 body {
     font-family: 'Lato', sans-serif;
 }
 
 .font_Raleway {
   font-family: 'Raleway', sans-serif;
+}
+
+.header {
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
 }
 
 .main {
@@ -79,7 +88,6 @@ body {
   color: #f2f2f2;
 }
 
-
 .text_area {
   text-align: center;
   width: 50%;
@@ -122,11 +130,11 @@ body {
   transition: 0.3s;
 }
 
-.work_image:nth-child(-n + 3) {
+.work_image:nth-child(-n+3) {
   margin-top: 0;
 }
 
-.work_image:nth-child(3n + 1) {
+.work_image:nth-child(3n+1) {
   margin-left: 0;
 }
 
@@ -190,13 +198,6 @@ body {
 
 /* --------TAB PC共通------------- */
 @media (min-width: 768px){
-  .header {
-    background-color: #fff;
-    position: fixed;
-    width: 100%;
-    z-index: 1;
-  }
-  
   .hamburger_menu {
     display: none;
   }
@@ -228,7 +229,7 @@ body {
     text-align: center;
   }
 
-  .work_image:nth-child(3n + 1) {
+  .work_image:nth-child(3n+1) {
     margin-top: 80px;
   }
 
@@ -308,10 +309,10 @@ body {
     text-align: center;
   }
 
-  .title_text-intro {
+  .text_area {
     margin-top: 20px;
   }
-  
+
   .text_area-works {
     margin-top: 80px;
   }
@@ -447,3 +448,43 @@ body {
   
 }
 /* ------------------------- */
+
+/* 
+✔︎text_area 
+tab margin 
+
+work
+figureをul
+  li
+    a
+  li
+  li
+
+figure　画像とテキスト包むと良い
+<div class="skill_images">
+  ul
+    li
+      figure
+      figure
+    li
+    li
+
+  sp
+    li
+
+    修正後pcも確認
+
+  ✔︎nth 空欄修正
+    + 
+    - 
+
+
+  ✔︎header {
+    z-index: 100;
+
+  
+  ✔︎SP header 固定
+
+    ✔︎charset 修正
+
+*/
