@@ -310,9 +310,22 @@ body {
   .work_image:first-child {
     margin-top: 0;
   }
+
+  .btn-email {
+    display: inline-block;
+  }
+
+  .skill_image_area {
+    text-align: center;
+    margin-top: 80px;
+  }
+
+  .skill_image_area:first-child {
+    margin-top: 40px;
+  }
 }
 
-/* --------------------- */
+/* --------TAB PC共通------------- */
 
 @media (min-width: 768px){
   .header {
@@ -321,9 +334,7 @@ body {
     width: 100%;
     z-index: 1;
   }
-}
-
-@media (min-width: 768px) {
+  
   .hamburger_menu {
     display: none;
   }
@@ -356,20 +367,10 @@ body {
   }
 
   .btn-email {
-    display: inline-block;
     height: 50%;
     margin-top: 40px;
     padding: 14px 20px;
     transition: 0.3s;
-  }
-
-  .skill_image_area {
-    text-align: center;
-    margin-top: 80px;
-  }
-
-  .skill_image_area:first-child {
-    margin-top: 40px;
   }
 
   .skill_image {
@@ -459,21 +460,11 @@ body {
   }
 
   .btn-email {
-    display: inline-block;
     padding: 14px 30px
   }
 
   .skills-inner {
     padding: 70px 0 100px;
-  }
-  
-  .skill_image_area {
-    margin-top: 80px;
-    text-align: center;
-  }
-
-  .skill_image_area:first-child {
-    margin-top: 40px;
   }
 
   .sns {
