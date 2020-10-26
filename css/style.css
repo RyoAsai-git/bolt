@@ -188,7 +188,6 @@ body {
   padding: 20px 0 25px;
 }
 
-
 /* --------TAB PC共通------------- */
 @media (min-width: 768px){
   .header {
@@ -216,6 +215,12 @@ body {
 
   .explanation_text-intro {
     display: inline-block;
+  }
+
+  .work_images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .work_image {
@@ -404,12 +409,12 @@ body {
   .explanation_text-work {
     margin: auto;
     font-size: 16px;
-    margin-bottom: 40px;
     text-align: center;
   }
 
   .btn-email {
-    padding: 14px 30px
+    padding: 14px 30px;
+    margin-top: 40px;
   }
 
   .skills-inner {
@@ -429,5 +434,16 @@ body {
     padding: 35px 0 35px;
     width: 100%;
   }
+
+  .work_image {
+    opacity: 0.7;
+    transition: 0.3s;
+  }
+  
+  .work_image:hover, test {
+    opacity: 1;
+    transition: 0.3s;
+  }
+  
 }
 /* ------------------------- */
