@@ -1,17 +1,6 @@
-@media (max-width:767px) {
-  /* SP */
-}
-
-@media (min-width: 768px) and (max-width: 1199x) {
-  /* TAB */
-}
-
-@media (min-width: 1200px) {
-  /* PC */
-}
-
 body {
   font-family: 'Lato', sans-serif;
+
 }
 
 .font_Raleway {
@@ -22,6 +11,7 @@ body {
   background-color: #f2f2f2;
   width: 100%;
   padding-top: 70px;
+  
 }
 
 .inner {
