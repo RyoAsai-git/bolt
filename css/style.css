@@ -267,8 +267,6 @@ body {
   .work_image {
     display: inline-block;
     margin: 80px 0 0 100px;
-    opacity: 0.7;
-    transition: 0.3s;
     width : calc(33.3333333% - 200px / 3);
   } 
 
@@ -435,17 +433,6 @@ body {
     padding: 35px 0 35px;
     width: 100%;
   }
-
-  .work_image {
-    opacity: 0.7;
-    transition: 0.3s;
-  }
-  
-  .work_image:hover, test {
-    opacity: 1;
-    transition: 0.3s;
-  }
-  
 }
 /* ------------------------- */
 
